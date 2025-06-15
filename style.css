@@ -46,12 +46,8 @@ body {
 }
 
 .butn {
-  position: absolute;
-  display: flex;
-  top: 610px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 1rem;
+  margin: 1rem auto 0 auto; /* Top margin + horizontal auto = center horizontally */
+  display: block;
   padding: 12px 24px;
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255,255,255,0.3);
@@ -59,13 +55,11 @@ body {
   border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
-  ackdrop-filter: blur(50px); /* Frosted glass */
+  backdrop-filter: blur(50px); /* you had a typo here: 'ackdrop-filter' */
   box-shadow: 
-    inset 4px 4px 8px rgba(255, 255, 255, 0.4),   /* top-left bevel */
-    inset -4px -4px 8px rgba(0, 0, 0, 0.2),       /* bottom-right bevel */
-    0 4px 30px rgba(0, 0, 0, 0.1);                /* outer shadow for float */
-  border: 1px solid rgba(255, 255, 255, 0.3);    
-  backdrop-filter: blur(50px);
+    inset 4px 4px 8px rgba(255, 255, 255, 0.4),
+    inset -4px -4px 8px rgba(0, 0, 0, 0.2),
+    0 4px 30px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
   
 }
